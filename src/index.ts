@@ -7,7 +7,7 @@ import {getEnvVariable} from './utils/getEnvVariable';
 
 const defaultPort = 6060;
 
-const port = Number(getEnvVariable('port')) || defaultPort;
+const port = Number(getEnvVariable('PORT')) || defaultPort;
 const app = express();
 
 app.use(cors());
@@ -21,5 +21,5 @@ app.post('/openai/chat/stream', openAiChatStreamHandler);
 app.post('/openai/chat/fetch', openAiChatFetchHandler);
 
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+  console.log(`Listening on port # ${port}`);
 });

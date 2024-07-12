@@ -11,6 +11,9 @@
     "build": "rm -fr dist && tsc",
     "start": "node dist/index.js"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
